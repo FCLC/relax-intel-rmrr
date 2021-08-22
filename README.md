@@ -111,8 +111,8 @@ root@sandbox:~#
 ---
 
 ### Disclaimers
- - I'm not a kernel programmer by any means, so if I got something horribly wrong correct me please :)
- - This path should be safe, as long as you don't try to remap devices which are used by the IPMI/BIOS, e.g.
+ - I haven't been a kernel dev for very long, this is my first significant patch, and it was born out of a need instead of a want.
+ - This patch should be safe, as long as you don't try to remap devices which are used by the IPMI/BIOS, e.g.
    - Network port shared between your IPMI and OS
    - RAID card in non-HBA mode with its driver loaded on the host
    - Network card with monitoring system installed on the host (e.g. [Intel Active Health System Agent](https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c04781229))
