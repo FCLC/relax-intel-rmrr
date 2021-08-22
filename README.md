@@ -8,7 +8,7 @@ vfio-pci 0000:01:00.1: Device is ineligible for IOMMU domain attach due to platf
 ```
 followed by `vfio: failed to set iommu for container: Operation not permitted`.
 
-This kernel patch fixes the problem **on kernels v3.17 and up** (tested up to 5.9.1). You can skip to "[Installation](README.md#installation)" 
+This kernel patch fixes the problem **on kernels v3.17 and up** (tested up to 5.11.x). You can skip to "[Installation](README.md#installation)" 
 section if you don't care about the rest. Reading of "[Disclaimers](README.md#disclaimers)" section to understand the 
 risks, and "[Solutions & hacks](deep-dive.md#other-solutions--hacks)" to get the idea of different alternatives is 
 highly recommended.
