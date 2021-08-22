@@ -13,7 +13,7 @@
  			pr_info("Intel-IOMMU: No bounce buffer. This could expose security risks of DMA attacks\n");
  			intel_no_bounce = 1;
 +		} else if (!strncmp(str, "relax_rmrr", 10)) {
-+			pr_info("Intel-IOMMU: assuming all RMRRs are relaxable. This can lead to instability or data loss\n");
++			pr_info("Intel-IOMMU: Assuming all RMRRs' are relaxable. This has the potential to lead to data loss in addition to openning up a DMA vulnerability. Enable at your own risk.\n");
 +			intel_relaxable_rmrr = 1;
  		}
  
